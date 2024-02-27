@@ -129,6 +129,36 @@ li:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
+.btnFilter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btnFilter input[type="radio"] {
+    display: none;
+}
+
+.btnFilter label {
+    color: #1D6154;
+    background-color: white;
+    border-radius: 60px;
+    border: 1px solid #1D6154;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+    height: 37px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btnFilter input[type="radio"]:checked + label {
+    background-color: #1D6154;
+    color: white;
+}
+
 .gallery {
 	width: 100%;
 	display: grid;
