@@ -99,6 +99,10 @@ nav a {
 	color: black;
 }
 
+#errorMessage {
+	padding-bottom: 10px;
+}
+
 li:hover {
 	color: #B1663C;
 }
@@ -125,10 +129,73 @@ li:hover {
 #introduction p {
 	margin-bottom: 0.5em;
 }
+
 #portfolio h2 {
 	text-align: center;
 	margin-bottom: 1em;
 }
+
+#portfolio a {
+	text-decoration: inherit;
+	color: black;
+	margin: 8px 0 0 20px;
+}
+
+#modal {
+	width: 70%;
+	height: 95%;
+	max-width: 630px;
+	max-height: 680px;
+	border-radius: 10px;
+	display: flex;
+	border: 1px solid black;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	z-index: 1;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	display: none;
+}
+
+#modal h3 {
+	padding-top: 50px;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+#modal button {
+	margin: 30px;
+	width: 237px;
+	height: 36px;
+	border-radius: 60px;
+	background-color: #1D6154;
+	color: white;
+	font-size: 14px;
+}
+
+.projetsModif {
+	display: flex;
+	justify-content: center;
+}
+
+.articlePhotos {
+	overflow: auto;
+	max-width: 80%;
+	height: 70%;
+	margin: auto;
+	border-bottom: 1px solid black;
+}
+
+.articlePhotos img {
+	max-width: 77px;
+	padding: 10px 8px;
+}
+
 .btnFilter {
     display: flex;
     justify-content: center;

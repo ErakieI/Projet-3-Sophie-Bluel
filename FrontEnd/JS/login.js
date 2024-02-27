@@ -27,7 +27,8 @@ btnConnexion.addEventListener("submit", function(event) {
   })
   .then(response => {
       if (!response.ok) {
-          throw new Error('La requête a échoué');
+        document.getElementById('errorMessage').textContent = "Email ou mot de passe incorrect.";
+        throw new Error('La requête a échoué');
       }      
       return response.json();
   })
@@ -41,8 +42,6 @@ btnConnexion.addEventListener("submit", function(event) {
           // Redirection vers la page HTML Admin
           window.location.href = "Admin.html";
           console.log("Bienvenue, Sophie.");
-      } else {
-        document.getElementById('errorMessage').textContent = "Email ou mot de passe incorrect.";
       }
   })
   .catch(error => {

@@ -54,7 +54,7 @@ function filterContent(selectedFilter) {
     }
 }
 
-
+// Appel de l'API et lancement des fonctions
 fetch("http://localhost:5678/api/works")
     .then(response => response.json())
     .then(data => {
