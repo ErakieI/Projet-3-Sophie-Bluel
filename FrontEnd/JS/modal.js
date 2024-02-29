@@ -65,6 +65,7 @@ openModal2.addEventListener("click", () => {
 document.addEventListener("click", (event) => {
   if (
     !modal.contains(event.target) &&
+    !modalAjout.contains(event.target) &&
     event.target !== openModal &&
     event.target !== openModal2
   ) {
