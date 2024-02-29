@@ -9,10 +9,15 @@
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
-	<script src="JS/works.js" defer></script>
-	<script src="JS/modal.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script src="js/works.js" defer></script>
+	<script src="js/modal.js" defer></script>
+	<script src="https://kit.fontawesome.com/3d771a9314.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="edition">
+	<a href="#modal"><i class="far fa-edit"></i> modifier</a>
+</div>
 <header>
 	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 	<nav>
@@ -24,7 +29,7 @@
 		</ul>
 	</nav>
 </header>
-<main>
+<main id="main">
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
@@ -39,13 +44,7 @@
 	<section id="portfolio">
 		<div class="projetsModif">
 			<h2>Mes Projets</h2>
-			<a href="#modalModif"><img src="./assets/icons/Vector.png" alt="crayon modifier"> modifier</a>
-		</div>
-		<div id="modal" aria-hidden="true">
-			<h3>Galerie photo</h3>
-			<div class="articlePhotos">
-			</div>
-			<button id="ajoutPhoto">Ajouter une photo</button>
+			<a href="#modal"><i class="far fa-edit"></i> modifier</a>
 		</div>
 		<div class="gallery">
 		</div>
@@ -64,6 +63,13 @@
 		</form>
 	</section>
 </main>
+
+<div id="modal" aria-hidden="true">
+	<h3>Galerie photo</h3>
+	<div class="articlePhotos">
+	</div>
+	<button id="ajoutPhoto">Ajouter une photo</button>
+</div>
 
 <footer>
 	<nav>
