@@ -84,31 +84,34 @@
 		</div>
 		<h3>Ajout photo</h3>
 		<div class="form-wrapper">
-		  <form action="#" method="post">
-			<div class="content">
-			  <i class="fa-regular fa-image"></i>
-			  <label for="content">+ Ajouter photo</label>
-			  <input type="file" name="content" id="content">
-			</div>
-			<div class="title-content">
-			  <label for="title">Titre</label>
-			  <input type="text" name="title" id="title">
-			</div>
-			<div class="cat-content">
-			  <label for="category">Catégorie</label>
-			  <select id="category" name="category" required>
-				<option value=""></option>
-				<option value="objet">Objet</option>
-				<option value="appartement">Appartement</option>
-				<option value="hotel">Hôtels & restaurants</option>
-			</select>
-			</div>
-			<hr>
-			<div class="btn-wrapper">
-				<button type="submit" class="btn">Valider</button>
+			<form action="#" method="post">
+			  <div class="content">
+				<i class="fa-regular fa-image"></i>
+				<label for="content">+ Ajouter photo</label>
+				<input type="file" name="content" id="content" required>
+				<div id="image-container">
+					<img id="preview-image" class="preview-image" src="#" alt="Aperçu de l'image" style="display: none;">
+				  </div>
 			  </div>
-		  </form>
-		</div>
+			  <div class="title-content">
+				<label for="title">Titre</label>
+				<input type="text" name="title" id="title" required>
+			  </div>
+			  <div class="cat-content">
+				<label for="category">Catégorie</label>
+				<select id="categoryForm" name="category" required>
+				  <option value=""></option>
+				  <option value="1" data-id="1">Objet</option>
+				  <option value="2" data-id="2">Appartement</option>
+				  <option value="3" data-id="3">Hôtels & restaurants</option>
+				</select>
+			  </div>
+			  <hr>
+			  <div class="btn-wrapper">
+				<button type="submit" class="btn" id="sendWorks">Valider</button>
+			  </div>
+			</form>
+		  </div>
 	  </div>
 </div>
 

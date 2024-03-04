@@ -382,7 +382,10 @@ select[name="category"] {
 #category {
   margin-top: 5px;
 }
-
+.preview-image {
+  max-width: 200px;
+  max-height: 200px;
+}
 i.fa-trash-can {
   position: relative;
   top: -20%;
