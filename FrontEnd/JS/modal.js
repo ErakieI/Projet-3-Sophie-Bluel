@@ -67,7 +67,8 @@ document.addEventListener("click", (event) => {
     !modal.contains(event.target) &&
     !modalAjout.contains(event.target) &&
     event.target !== openModal &&
-    event.target !== openModal2
+    event.target !== openModal2 ||
+    event.target === xmark
   ) {
     modal.style.display = "none";
     document.body.style.backgroundColor = "rgba(0, 0, 0, 0)";
