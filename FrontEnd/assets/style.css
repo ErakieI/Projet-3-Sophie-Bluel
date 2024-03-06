@@ -287,12 +287,9 @@ li:hover {
   justify-content: center;
 }
 .btn-wrapper button {
-	background: #A7A7A7;
-}
-.btn-wrapper button:hover {
 	background: #1D6154;
-	;
 }
+
 #modal button:hover,
 #modalAjout button:hover {
   cursor: pointer;
@@ -388,8 +385,8 @@ select[name="category"] {
 }
 i.fa-trash-can {
   position: relative;
-  top: -20%;
-  left: -6%;
+  top: -90%;
+  left: 60%;
   background-color: black;
   color: white;
   width: 20px;
@@ -410,11 +407,19 @@ i.fa-trash-can:hover {
 }
 
 .articlePhotos {
+  display: flex;
+  flex-wrap: wrap;
   overflow: auto;
-  max-width: 80%;
+  width: 80%;
   height: 70%;
   margin: auto;
   border-bottom: 1px solid black;
+  align-content: flex-start;
+}
+
+.articlePhotos figure {
+  width: 100px;
+  height: 120px;
 }
 
 .articlePhotos img {

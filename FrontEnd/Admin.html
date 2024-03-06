@@ -11,8 +11,6 @@
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<script src="js/works.js" defer></script>
-	<script src="js/modal.js" defer></script>
-	<script src="js/modalAjout.js" defer></script>
 	<script src="https://kit.fontawesome.com/3d771a9314.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -88,18 +86,18 @@
 			  <div class="content">
 				<i class="fa-regular fa-image"></i>
 				<label for="content">+ Ajouter photo</label>
-				<input type="file" name="content" id="content" required>
+				<input type="file" name="content" id="content">
 				<div id="image-container">
 					<img id="preview-image" class="preview-image" src="#" alt="Aperçu de l'image" style="display: none;">
 				  </div>
 			  </div>
 			  <div class="title-content">
 				<label for="title">Titre</label>
-				<input type="text" name="title" id="title" required>
+				<input type="text" name="title" id="title">
 			  </div>
 			  <div class="cat-content">
 				<label for="category">Catégorie</label>
-				<select id="categoryForm" name="category" required>
+				<select id="categoryForm" name="category">
 				  <option value=""></option>
 				  <option value="1" data-id="1">Objet</option>
 				  <option value="2" data-id="2">Appartement</option>
