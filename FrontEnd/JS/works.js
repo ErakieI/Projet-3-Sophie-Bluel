@@ -7,7 +7,6 @@ const modalAjout = document.querySelector("#modalAjout");
 const openModalAjout = document.querySelector("#ajoutPhoto");
 const image = document.getElementById("preview-image");
 const sendWorks = document.getElementById("sendWorks");
-const categorySelect = document.getElementById("categoryForm");
 const arrow = document.querySelector("i.fa-arrow-left");
 const xmark = document.querySelector("i.fa-xmark");
 let selectedFilter;
@@ -25,7 +24,7 @@ let photo = document.querySelector("#content");
 
 // Fonction qui crée le tableau des travaux
 function createArray(works) {
-  for (i = 0; i < works.length; i++) {
+  for (let i = 0; i < works.length; i++) {
     const figure = document.createElement("figure");
     const img = document.createElement("img");
     const figCaption = document.createElement("figCaption");
@@ -193,9 +192,9 @@ document.addEventListener("click", (event) => {
 
 // Visualisation img
 document.getElementById("content").addEventListener("change", function () {
-  var file = this.files[0];
+  let file = this.files[0];
   if (file) {
-    var reader = new FileReader();
+    let reader = new FileReader();
     reader.onload = function (e) {
       image.src = e.target.result;
       image.style.display = "flex";
@@ -230,8 +229,8 @@ sendWorks.addEventListener("click", (event) => {
       }
     })
     .then(() => {
-      getWorks("http://localhost:5678/api/works"),
-        (articlePhotos.innerHTML = ""),
+      getWorks("http://localhost:5678/api/works")
+        (articlePhotos.innerHTML = "")
         createArrayModal(works);
     })
     .then(() => {
