@@ -127,7 +127,13 @@ function createArrayModal(works) {
         headers: {
           Authorization: "Bearer " + token,
           "Content-Type": "application/json",
-        },
+        }
+      })
+      .then (() => {
+        console.log("Suppression réussi")
+      })
+      .catch((error) => {
+        console.log(error);
       });
     });
   }
