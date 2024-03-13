@@ -240,7 +240,9 @@ sendWorks.addEventListener("click", (event) => {
         createArrayModal(works);
     })
     .then(() => {
-      (titre.value = ""), (categorie.value = ""), (image.style.display = "none");
+      titre.value = "";    
+      categorie.value = ""; 
+      image.style.display = "none";
       document.querySelector(".fa-image").style.display = "flex";
       document.querySelector('label[for="content"]').style.display = "flex";
     })
