@@ -235,15 +235,15 @@ sendWorks.addEventListener("click", (event) => {
       }
     })
     .then(() => {
-      getWorks("http://localhost:5678/api/works")
-        (articlePhotos.innerHTML = "")
+      getWorks("http://localhost:5678/api/works");
+        (articlePhotos.innerHTML = "");
         createArrayModal(works);
     })
     .then(() => {
-      titre.value = "";    
-      categorie.value = ""; 
-      image.style.display = "none";
-      document.querySelector(".fa-image").style.display = "flex";
+      titre.value = "",    
+      categorie.value = "",
+      image.style.display = "none",
+      document.querySelector(".fa-image").style.display = "flex",
       document.querySelector('label[for="content"]').style.display = "flex";
     })
     .catch((error) => {
